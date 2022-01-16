@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>User_by_id</title>
+</head>
+<body>
+
+<main>
+    <h1>Тут показываем все Предложения</h1>
+    <p>{{json}}</p>
+    <hr>
+    <h1>Тут добавляем новое Предложение</h1>
+
+    <form action="/offers" method="post">
+        <input name="order_id" type="text" value=":int:Введите order_id" class="button"> <br>
+        <input name="executor_id" type="text" value=":int:Введите executor_id" class="button"> <br>
+        <input type="submit" value="Добавить Предложение" class="button">
+    </form>
+    <hr>
+
+    <h1>Тут удаляем Предложение</h1>
+
+    <form action="/offers" method="post">
+        <input name="del_offer_id" type="text" value=":int:Введите id предложения" class="button" size="30"> <br>
+        <input type="submit" value="Удалить Предложение" class="button">
+    </form>
+    <hr>
+
+    <h1>Тут обновляем Предложение</h1>
+
+    <form action="/offers" method="post">
+        <input name="upd_offer_id" type="text" value=":int:Введите id" class="button"> <br>
+        <input name="order_id" type="text" value=":int:Введите order_id" class="button"> <br>
+        <input name="executor_id" type="text" value=":int:Введите executor_id" class="button"> <br>
+        <input type="submit" value="Обновить Предложение" class="button">
+    </form>
+    <hr>
+
+
+</main>
+</body>
+</html>

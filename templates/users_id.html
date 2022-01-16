@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>User_by_id</title>
+</head>
+<body>
+
+<main>
+    <h1>Тут показываем всех Пользователей</h1>
+    <p>{{json}}</p>
+    <hr>
+    <h1>Тут добавляем нового Пользователя</h1>
+
+    <form action="/users" method="post">
+        <input name="first_name" type="text" value=":text:Введите first_name" class="button"> <br>
+        <input name="last_name" type="text" value=":text:Введите last_name" class="button"> <br>
+        <input name="age" type="text" value=":int:Введите age" class="button"> <br>
+        <input name="email" type="text" value=":text:Введите email" class="button"> <br>
+        <input name="role" type="text" value=":text:Введите role" class="button"> <br>
+        <input name="phone" type="text" value=":text:Введите phone" class="button"> <br>
+        <input type="submit" value="Добавить Пользователя" class="button">
+    </form>
+    <hr>
+
+    <h1>Тут удаляем Пользователя</h1>
+
+    <form action="/users" method="post">
+        <input name="del" type="text" value=":int:Введите id пользователя" class="button" size="30"> <br>
+        <input type="submit" value="Удалить Пользователя" class="button">
+    </form>
+    <hr>
+
+    <h1>Тут обновляем Пользователя</h1>
+
+    <form action="/users" method="post">
+        <input name="upd_id" type="text" value=":int:Введите id" class="button"> <br>
+        <input name="first_name" type="text" value=":text:Введите first_name" class="button"> <br>
+        <input name="last_name" type="text" value=":text:Введите last_name" class="button"> <br>
+        <input name="age" type="text" value=":int:Введите age" class="button"> <br>
+        <input name="email" type="text" value=":text:Введите email" class="button"> <br>
+        <input name="role" type="text" value=":text:Введите role" class="button"> <br>
+        <input name="phone" type="text" value=":text:Введите phone" class="button"> <br>
+        <input type="submit" value="Обновить Пользователя" class="button">
+    </form>
+    <hr>
+
+
+</main>
+</body>
+</html>
